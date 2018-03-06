@@ -1,0 +1,123 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+
+/**
+ * 横屏
+ */
+
+@media only screen and (min-width: 1000px) and (max-width: 1600px) and (orientation: landscape) {
+	.warp {
+		margin: 0 auto;
+		width: 50%;
+	}
+}
+
+
+/**
+ * 竖屏
+ */
+
+@media only screen and (min-width: 1000px) and (max-width: 1600px) and (orientation: portrait) {
+	.warp {
+		margin: 0 auto;
+		width: 70%;
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+	.warp {
+		width: 70%;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+	.warp {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 500px;
+	}
+}
+
+.warp {
+	margin: 0 auto;
+	background: url(../img/2B4048B9-ACE7-458F-A6E1-3AB07B873BA9@1x.png) no-repeat center;
+	height: 100%;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.warp-img1 {
+	background: url(../img/97FA9041-AADD-4075-BA83-AF857771CD7B@1x.png)no-repeat center;
+	background-size: contain;
+	width: 90%;
+	height: 50%;
+	position: absolute;
+	top: 4%;
+	left: 5%;
+}
+
+.warp-img4 {
+	background: url(../img/9827D4F1-EB76-499E-9841-7BE22E58CEDA@2x.png)no-repeat center;
+	background-size: contain;
+	width: 90%;
+	height: 30%;
+	position: absolute;
+	bottom: 0%;
+	left: 5%;
+}
+
+.warp-img2 {
+	background: url(../img/4BFF3D55-7623-4B2A-8980-039B15A1B481@1x.png)no-repeat center;
+	background-size: 100% 100%;
+	/*height:15%;*/
+	width: 90%;
+	height: 20%;
+	position: absolute;
+	top: 55%;
+	left: 5%;
+	z-index: 1;
+	padding-bottom: 20px;
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.warp-font {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+	margin-top: 5%;
+	overflow-y: scroll;
+}
+
+.warp-img3 {
+	background: url(../img/A6941BDE-4852-4495-A0CC-B7CC9554F123@2x.png)no-repeat center;
+	background-size: contain;
+	height: 15%;
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	z-index: 1;
+}
+
+body {
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
